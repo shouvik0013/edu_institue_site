@@ -13,8 +13,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="eduford_img/logo.png"></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -23,7 +23,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -34,6 +34,45 @@
             <a href="" class="hero-btn">Visit us to know More</a>
         </div>
     </section>
-</body>
+    <!-------------Course--------------->
+    
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Computer Application,geteway of IT world</p>
+        
+        <div class="row">
+            <div class="course-col">
+                <h3>BCA</h3>
+                <p>Bachelors of Computer Application program covers intermediate<br>
+                computer applications</p>
+            </div>
+            <div class="course-col">
+                <h3>MCA</h3>
+                <p>Masters of Computer Application program covers advanced<br>
+                computer applications</p>
+            </div>
+            <div class="course-col">
+                <h3>Integrated</h3>
+                <p>BCA & MCA Intergrated program covers intermediate<br>
+                as well as advanced computer applications</p>
+            </div>
+        </div>
+    
+    </section>
 
+
+    <!------------JavaScript for Toggle Menu------------>
+    <script>
+        let navLinks = document.getElementById('navLinks');
+        
+        let showMenu = () => {
+            navLinks.style.right = "0px";
+        };
+
+        let hideMenu = () => {
+            navLinks.style.right = "-200px";
+        };
+
+    </script>
+</body>
 </html>
